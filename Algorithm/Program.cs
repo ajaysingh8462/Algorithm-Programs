@@ -1,4 +1,5 @@
 ﻿using Algorithm;
+using System;
 
 namespace Algorithm
 {
@@ -7,7 +8,7 @@ namespace Algorithm
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Algorithm Programs!");
-            Console.WriteLine("1.Permutation Using Recursion");
+            Console.WriteLine("1.Permutation Using Recursion\n2.Binary Search the word from wordlist");
             Console.WriteLine("Enter the option");
             int num = Convert.ToInt32(Console.ReadLine());
             switch (num)
@@ -18,13 +19,18 @@ namespace Algorithm
                     int n = str.Length;
                     Permutations.Permutate(str, 0, n - 1);
                     break;
+                case 2:
+                    string txtpath = File.ReadAllText(@"C:\Users\admin\source\repos\RFP232\Algorithm-Programs\Algorithm\TextFile1.txt");
+                    List<string> words = new List<string>(txtpath.Split());
+                    words.Sort();
+                    BinarySearch.BinarySearchWord(words);
+                    break;
 
                 default:
                     Console.WriteLine("Enter the valid option!");
                     break;
             }
-            Console.WriteLine("\nDo you want to continue");
-            Console.ReadLine();
+            
         }
     }
 }

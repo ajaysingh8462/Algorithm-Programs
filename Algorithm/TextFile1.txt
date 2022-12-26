@@ -1,0 +1,65 @@
+﻿Naming Conventions
+Class
+
+StudentClass
+
+Method
+
+GetMarks
+
+Local variable
+
+firstName
+
+Private variable
+
+avgMarks
+
+Constant
+
+Percentile
+
+Data types
+Int
+
+Integer values like 1234, 10000
+
+Double
+
+64-bit floating-point, 3.145644
+
+Float
+
+Floating point number, 3.1454
+
+String
+
+Set of characters, “Welcome.”
+
+Byte
+
+8bit unsigned integer
+
+Char
+
+16 bit Unicode character, ‘A.’
+
+Long
+
+64 bit signed integer, -9.0789
+
+Decimal
+
+High precision decimal numbers
+
+Bool
+
+True or false Boolean value
+
+Enums
+
+Value data type contains its value
+
+Struct
+
+value type that is used to represent a record
